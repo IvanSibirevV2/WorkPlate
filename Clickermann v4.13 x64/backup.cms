@@ -1,0 +1,24 @@
+﻿// 18.03.2021
+#name "New Script"
+//LOGSHOW (1, 400,100)
+//LOGCLEAR
+
+IF(ISKEYDOWN (#1)=1)
+  EXECUTE("C:\Program Files (x86)\Microsoft Visual Studio\Installer\setup.exe")
+   WAITMS(3000)
+   LCLICK(829,171)
+   WAITMS(4000)
+   LCLICK(289,100)
+   WAITMS(500)
+   KEYSTRING("mfc")
+   HALT
+END_IF
+
+IF(ISKEYDOWN (#2)=1)
+   LCLICK(1241,22)
+  EXECUTE("C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe")
+HALT  
+
+END_IF      
+
+
